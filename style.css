@@ -7,13 +7,14 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #e7e7e7;
 }
-input, button {
+input, button, textarea {
     border: none;
 }
-input:focus {
+input:focus, textarea:focus {
     outline: none;
 }
 .index-main {
+    padding: 40px;
     padding-top: 55px;
 }
 .link-icon {
@@ -110,7 +111,7 @@ input:focus {
 
 /* Header */
 .main-header {
-    margin-top: 20px;
+    margin-top: 70px;
     text-align: center;
 }
 .main-header h1 {
@@ -118,4 +119,114 @@ input:focus {
 }
 .main-header span {
     color: #888;
+}
+.main-header hr {
+    margin-top: 50px;
+    border-top: 3px solid;
+}
+
+/* Feature Buttons */
+.feature-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.feature-container a {
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 40px;
+    width: 245px;
+    background-color: #191919;
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s;
+}
+.feature-container a:hover {
+    background-color: #0077ff;
+    box-shadow: none;
+}
+.feature-container a code {
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    font-size: 15px;
+}
+.functional {
+    box-shadow: 0 0 0 1px #00a2ff;
+}
+
+/* Main Feature Styling */
+.main-content-container {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Word Counter */
+.word-counter {
+    position: relative;
+}
+.word-counter textarea, .word-counter-header, .word-counter-footer {
+    padding: 10px;
+    padding-left: 16px;
+    border-radius: 10px;
+    width: 1000px;
+    color: #ddd
+}
+.word-counter textarea {
+    border: 1px solid #333;
+    background-color: #111;
+}
+.word-counter textarea:focus {
+    box-shadow: 0 0 0 1px #00a2ff;
+}
+.word-counter-header {
+    margin-bottom: 10px;
+    background-color: #5775d6;
+    color: #e7e7e7;
+}
+.word-counter-footer {
+    padding: 5px;
+    padding-left: 15px;
+    background-color: #2a2a2a;
+    font-weight: 500;
+}
+.word-counter-sidebar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 10px;
+    width: 320px;
+    background-color: #333;
+}
+.word-counter-sidebar ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+.word-counter-sidebar li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 16px;
+    border-bottom: 1px solid #666;
+}
+.word-counter-sidebar li span {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    background-color: #555;
+    font-size: 13px;
+    line-height: 23px;
+}
+.word-counter-sidebar-header {
+    border-radius: 10px 10px 0 0;
+    background-color: #222;
+    font-weight: 500;
+    border-bottom: none !important;
 }
