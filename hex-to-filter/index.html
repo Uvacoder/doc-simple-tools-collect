@@ -4,7 +4,7 @@
 	<head>
 
 		<!-- Tab Settings -->
-		<title>Word Counter - WebDevHub</title>
+		<title>Hex to Filter - WebDevHub</title>
 		<!-- <link rel="shortcut icon" type="image/png" href="images/logos/256x256.jpg"/> -->
         
 		<!-- Meta tags -->
@@ -57,36 +57,44 @@
           </nav> 
 
         <div class="index-main">
-            <div class="word-counter main-content-container">
+            <div class="hex-to-filter main-content-container">
                 <div class="feature-main-header main-header">
-                    <h1>Word Counter</h1>
-                    <span>Count the words, characters, sentances and paragraphs of a text.</span>
+                    <h1>Hex to CSS <code>filter:</code></h1>
+                    <span>Convert a Hex color into a CSS <code>filter:</code> component to recolor images without 
+                    having to make a new one.</span>
                     <hr>
                 </div>
-                <div class="word-counter-header">
-                    <h2><span class="word-count">0 words</span> <span class=char-count>0 characters</span></h2>
-                </div>
-                <textarea id="counter-input" rows="20" placeholder="Start typing, or copy and paste some text here..."></textarea>
-                <div class="word-counter-footer">
-                    <span class="word-count">0 words</span> <span class=char-count>0 characters</span>
-                </div>
-                <div class="word-counter-sidebar">
-                    <ul>
-                        <li class="word-counter-sidebar-header">Details</li>
-                        <li>Words<span id="word-count-small">0</span></li>
-                        <li>Characters<span id="char-count-small">0</span></li>
-                        <li>Sentences<span id="sentance-count">0</span></li>
-                        <li>Paragraphs<span id="paragraph-count">0</span></li>
-                        <!-- <li>Reading Level<span>N/A</span></li> -->
-                        <li>Reading Time<span id="reading-time">0 sec</span></li>
-                        <li>Speaking Time<span id="speaking-time">0 sec</span></li>
-                    </ul>
-                </div>
+                <table>
+                    <tr valign="top">
+                      <td width="50%">
+                        <fieldset>
+                            <label>Target color</label>
+                            <input class="target" type="text" placeholder="Target hex" value="#00a4d6">
+                            <button onclick="executeFilter();" class="execute">Compute Filters</button>
+                        </fieldset>
+
+                        <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+                        <div class="pixel realPixel"></div>
+                  
+                        <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+                        <div class="pixel filterPixel"></div>
+                  
+                        <p class="filterDetail"></p>
+                        <p class="lossDetail"></p>
+                      </td>
+                      <td>
+                        <p class="hex-to-filter-disclaimer">For this code to work well the starting color needs to be black. 
+                            If your icon set isn't black you can prepend "brightness(0) saturate(100%)" 
+                            to your filter property which will first turn the icon set to black.</p>
+                      </td>
+                    </tr>
+                  </table>
             </div>
         </div>
 
-        <script src="wordCounter.js"></script>
+        <script src="hexToFilter.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </body>
 
