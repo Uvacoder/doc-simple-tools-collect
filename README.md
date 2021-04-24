@@ -4,6 +4,9 @@ WebDevHub is a hub for web developers, giving them access
 to a plentitude of tools to help them with their developing 
 needs.
 
+### View Site
+https://thhamiltonsmith.github.io/webdevhub/
+
 ### Planned Features
 - Code Beautifier (HTML, CSS, JS, PHP etc)
 - XML to JSON converter
