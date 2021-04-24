@@ -230,3 +230,65 @@ input:focus, textarea:focus {
     font-weight: 500;
     border-bottom: none !important;
 }
+
+/* Lorem Ipsum Generator */
+.lorem-ipsum p {
+    margin-bottom: 20px;
+    text-align: justify !important;
+}
+.lorem-ipsum input[type=number] {
+    padding: 3px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    color: #141414;
+    text-align: center;
+}
+.lorem-ipsum input:focus {
+    box-shadow: 0 0 0 1px #00a2ff;
+}
+.lorem-ipsum input[type=button] {
+    padding: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+}
+/* Chrome, Safari, Edge, Opera */
+.lorem-ipsum input::-webkit-outer-spin-button,
+.lorem-ipsum input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.lorem-ipsum-header {
+    margin-top: 20px;
+}
+.lorem-ipsum-controls {
+    position: relative;
+    padding: 15px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #5775d6;
+    color: #e7e7e7;
+}
+.lorem-ipsum-controls span {
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.lorem-ipsum-controls .word-count {
+    position: absolute;
+    right: 15px;
+}
+#paragraph-container {
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+#paragraph-container p {
+    color: #ddd;
+}
