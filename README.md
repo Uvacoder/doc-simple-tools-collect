@@ -15,6 +15,7 @@ https://thhamiltonsmith.github.io/webdevhub/
 ### Planned Features
 - Code Beautifier (HTML, CSS, JS, PHP etc)
 - XML to JSON converter
+- JSON to ymal converter
 - Image Converter
 - Color Converter (Hex to RGB etc)
 - URL Shortner
