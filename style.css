@@ -178,9 +178,27 @@ input:focus, textarea:focus {
     padding: 10px;
     padding-left: 16px;
     border-radius: 10px;
-    width: 1000px;
+    width: 70%;
     color: #ddd
 }
+
+@media only screen and (max-width: 1250px) {
+    .word-counter textarea, .word-counter-header, .word-counter-footer {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .word-counter-sidebar {
+        max-width: 200px;
+    }
+    .index-main {
+        padding: 10px;
+        padding-top: 55px;
+    }
+  }
+
+
 .word-counter textarea {
     border: 1px solid #333;
     background-color: #111;
