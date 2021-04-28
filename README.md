@@ -18,6 +18,7 @@ https://thhamiltonsmith.github.io/webdevhub/
 - Image Converter
 - Color Converter (Hex to RGB etc)
 - URL Shortner
+- User Uploaded Templates
 - *Enter new features here...*
 
 > As the platform grows, expanding to not only support features 
